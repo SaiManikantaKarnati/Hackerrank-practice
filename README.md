@@ -1,1 +1,1 @@
-# Hackerrank-practice-SQL
+# Hackerrank-practice
