@@ -1,0 +1,9 @@
+# Set .union() Operation
+
+# Enter your code here. Read input from STDIN. Print output
+n = int(input())
+english = set(map(int,input().split()))
+m = int(input())
+french = set(map(int,input().split()))
+ans = english.union(french)
+print(len(ans))
