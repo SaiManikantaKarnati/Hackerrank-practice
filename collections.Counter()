@@ -1,0 +1,14 @@
+# collections.Counter()
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import collections
+x = int(input())
+n = collections.Counter(map(int,input().split()))
+xi = int(input())
+earning = 0
+for i in range(xi):
+    size, price = map(int,input().split())
+    if n[size]:
+        earning = earning + price
+        n[size] = n[size] - 1
+print(earning)
