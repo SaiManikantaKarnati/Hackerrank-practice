@@ -1,0 +1,6 @@
+# itertools.permutations()
+
+# Enter your code here. Read input from STDIN. Print output to 
+from itertools import permutations
+string, n = input().split()
+print(*[''.join(i) for i in permutations(sorted(string),int(n))],sep='\n')
