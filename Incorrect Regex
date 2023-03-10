@@ -1,0 +1,12 @@
+# Incorrect Regex
+
+import re
+
+n = int(input())
+for _ in range(n):
+    ans = True
+    try:
+        reg = re.compile(input())
+    except re.error:
+        ans = False
+    print(ans)
